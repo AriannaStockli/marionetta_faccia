@@ -45,6 +45,3 @@ La condizione if (distPolliceMedio < 50) controlla se la distanza tra le coordin
 ## Target e contesto d’uso
 Il target della mia marionetta digitale potrebbe essere costituito da bambini di un età tra i cinque e i dodici anni. Potrebbe essere realizzata con lo scopo di intrattenere i bambini in contesti come spettacoli per la loro età, programmi televisivi, cartoni animati interattivi, parchi giochi o eventi per famiglie.
 La marionetta digitale potrebbe essere utilizzata per rendere più interattiva l’esperienza del quiz televisivo per i bambini, consentendo loro di utilizzare la mano o i gesti per rispondere alle doman- de o per partecipare alle attività del quiz, rendendo l’esperienza più divertente e coinvolgente.
-
-
-# marionetta_faccia

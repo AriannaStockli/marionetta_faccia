@@ -25,6 +25,8 @@ Quando il medio e il pollice si avvicinano, la bocca si apre e gli occhi si spal
 Il movimento degli occhi cambia in base alla posizione orizzontale della mano rispetto al canvas. Quando la mano si sposta verso la destra, gli occhi del personaggio guardano verso destra e viceversa quando la mano si sposta verso sinistra.
 Per quanto riguarda il design, ho utilizzato forme geometriche semplici, come archi e cerchi per realizzare il volto del personaggio.
 
+[<img src="documentazione/screencast.mp4" width="500" alt="video progetto">]()
+
 ## Tecnologia usata
 Il codice utilizza diverse funzioni di p5.js per creare il canvas grafico, disegnare le immagini delle mani, della bocca e degli occhi, e gestire gli eventi di interazione dell’utente.
 Sono state utilizzate condizioni if e else per gestire il comportamento dell’applicazione in base alle posizioni delle mani rilevate e alle interazioni dell’utente.

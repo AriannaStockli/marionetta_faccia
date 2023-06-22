@@ -15,6 +15,7 @@ Attraverso l’utilizzo della videocamera e dei punti assegnati alle dita della 
 
 
 ## Riferimenti progettuali
+Mi sono ispirata a questa animazione, per lo stile del mio personaggio.
 https://cdn.dribbble.com/users/537941/screenshots/4308457/media/f318edfe3ecb9504c654a0d42d400f6f.gif
 
 

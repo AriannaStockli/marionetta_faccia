@@ -5,7 +5,7 @@ Docenti: A. Gysin, G. Profeta
 Elaborato 1: Marionetta digitale  
 
 # Smile
-Autore: Arianna Stöckli
+Autore: Arianna Stöckli<br>
 [MediaPipe demo-ES6](https://ariannastockli.github.io/marionetta_faccia/)
 
 

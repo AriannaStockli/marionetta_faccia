@@ -19,7 +19,7 @@ Mi sono ispirata a questa animazione, per lo stile del mio personaggio.
 https://cdn.dribbble.com/users/537941/screenshots/4308457/media/f318edfe3ecb9504c654a0d42d400f6f.gif
 
 
-## Design dell’interfraccia e modalià di interazione
+## Design dell’interfraccia e modalità di interazione
 Ho creato tre stati emozionali per il mio personaggio: un’espressione felice, un’espressione sorpresa e un’espressione addormentata. Quando la mano della persona è completamente aperta, la faccina appare normale, con un’espressione sorridente.
 Quando l’indice e il mignolo si avvicinano, corrispondenti agli occhi del personaggio, l’immagine cambia e gli occhi si chiudono, suggerendo che il personaggio stia dormendo. Per accentuare questo stato, ho aggiunto un’interazione con il trackpad, in modo che al clic il colore dello sfondo diventi grigio scuro, come se la luce fosse spenta.
 Quando il medio e il pollice si avvicinano, la bocca si apre e gli occhi si spalancano, dando vita all’espressione di sorpresa.

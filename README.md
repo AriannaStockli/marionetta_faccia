@@ -35,15 +35,59 @@ Il codice utilizza diverse funzioni di p5.js per creare il canvas grafico, diseg
 Sono state utilizzate condizioni if e else per gestire il comportamento dell’applicazione in base alle posizioni delle mani rilevate e alle interazioni dell’utente.
 
 La condizione if (sfondoScuro) controlla se la variabile booleana sfondoScuro è vera. Se sfondoScuro è true, allora lo sfondo del canvas viene impostato su grigio scuro utilizzando la funzione background(50), altrimenti viene impostato su bianco utilizzando la funzione background(255).
+```JavaScript
+   if (sfondoScuro) {
+        background(50) // Imposta lo sfondo su grigio scuro
+      } else {
+        background(255) // Imposta lo sfondo su bianco
+      }
+```
 
 La funzione mouseClicked() viene chiamata quando si fa clic sul canvas e viene utilizzata per invertire il valore della variabile sfondoScuro, che controlla se lo sfondo dell’applicazione deve essere scuro o chiaro.
+```JavaScript
+function mouseClicked() {
+        sfondoScuro = !sfondoScuro; // Inverti il valore di sfondoScuro
+    }
+```
 
 La condizione if (ditaSeparate) controlla se le dita dell’indice e del mignolo della mano rilevata sono separate. Viene calcolata la distanza tra le coordinate dell’indice e del mignolo utilizzando la funzione dist() e se questa distanza è inferiore a 200, allora ditaSeparate sarà true.
 Se ditaSeparate è true, viene mostrata un’immagine dell’occhio chiuso per l’indice e il mignolo della mano.
+```JavaScript
+if (ditaSeparate) {
+              image(occhiochiuso, indice.x-150, indice.y-150, 250, 250)
+              image(occhiochiuso, mignolo.x-150, mignolo.y-150, 250, 250)
+            } else {
+              if (posMedia.x < width/2) {
+                image(occhioSx, indice.x-150, indice.y-150, 250, 250)
+                image(occhioSx, mignolo.x-150, mignolo.y-150, 250, 250)
+              } else {
+                image(occhioDx, indice.x-150, indice.y-150, 250, 250)
+                image(occhioDx, mignolo.x-150, mignolo.y-150, 250, 250)
+              }
+              // image(bocca, pollice.x-150, pollice.y-150, 250, 250)
+            }
+```
 
 La condizione if (posMedia.x < width/2) controlla se la posizione media tra le coordinate dell’indice e del mignolo della mano rilevata è a sinistra del canvas. Se è vero, viene mostrata un’immagine dell’occhio sinistro per l’indice e il mignolo della mano, altrimenti viene mostrata un’immagine dell’occhio destro.
 
 La condizione if (distPolliceMedio < 50) controlla se la distanza tra le coordinate del pollice e del medio della mano rilevata è inferiore a 50. Se è vero, significa che il pollice e il medio sono molto vicini e in tal caso, viene mostrata un’immagine della bocca aperta insieme all’occhio aperto corrispondente (sinistro o destro, a seconda della posizione della mano sul canvas), altrimenti viene mostrata un’immagine della bocca chiusa.
+```JavaScript
+  if (distPolliceMedio < 50){
+        if(posMedia.x < width/2) {
+          background(255)
+          image(boccaaperta, medio.x-150, medio.y-150, 250, 250)
+          image(occhioSxaperto, indice.x-150, indice.y-150, 250, 250)
+          image(occhioSxaperto, mignolo.x-150, mignolo.y-150, 250, 250)
+        } else {
+          background(255)
+          image(boccaaperta, medio.x-150, medio.y-150, 250, 250)
+          image(occhioDxaperto, indice.x-150, indice.y-150, 250, 250)
+          image(occhioDxaperto, mignolo.x-150, mignolo.y-150, 250, 250)
+        }
+      } else {
+        image(bocca, pollice.x-150, pollice.y-150, 250, 250)
+      }
+```
 
 ## Target e contesto d’uso
 Il target della mia marionetta digitale potrebbe essere costituito da bambini di un età tra i cinque e i dodici anni. Potrebbe essere realizzata con lo scopo di intrattenere i bambini in contesti come spettacoli per la loro età, programmi televisivi, cartoni animati interattivi, parchi giochi o eventi per famiglie.

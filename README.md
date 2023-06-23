@@ -29,6 +29,8 @@ Per quanto riguarda il design, ho utilizzato forme geometriche semplici, come ar
 [<img src="documentazione/img_01.png" width="300" alt="immagine progetto">]()
 [<img src="documentazione/img_03.png" width="300" alt="immagine progetto">]()
 [<img src="documentazione/img_05.png" width="300" alt="immagine progetto">]()
+https://github.com/AriannaStockli/marionetta_faccia/assets/126774378/0bc47fe2-1b63-429d-b0fc-3a9da7461fd0
+
 
 ## Tecnologia usata
 Il codice utilizza diverse funzioni di p5.js per creare il canvas grafico, disegnare le immagini delle mani, della bocca e degli occhi, e gestire gli eventi di interazione dell’utente.
